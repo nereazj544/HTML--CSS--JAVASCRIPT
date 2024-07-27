@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>FORMULARIO</h2>
+
+        <form action="">
+            <input type="text" name="nombre" placeholder="NOMBRE">
+            <br>
+            <br>
+            <input type="text" placeholder="APELLIDO">
+            <br>
+            <br>
+            <input type="text" placeholder="PROFESION" disabled>
+            <!-- Cuando se pone disabled es que no esta disponible -->
+            <br>
+            <br>
+            <input type="text" placeholder="EDAD" size="3" maxlength="3">
+            <!-- maxlength es un maximo de caracteres -->
+        </form>
+        <br>
+        <h2>BOTONES DE FORMULARIOS</h2>
+        <form action="">
+            <p>Boton de tipo: boton</p>
+            <input type="button" value="aceptar">
+            <p>Boton de tipo: file</p>
+            <input type="file" value="aceptar">
+            <p>Boton de tipo: imagen</p>
+            <input type="image" value="aceptar" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHNoZGU0ZGhzdDl2c2gxdHl5MzBqcGVtbnZraTd3MGszeWV5b2djbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zpXWfIfvdK7YmpzRC8/giphy.gif" style="width: 90px;">
+            <p>Boton de tipo: resetear</p>
+            <input type="reset" value="resetear">
+            <p>Boton de tipo: enviar</p>
+            <input type="submit" value="enviar">
+        </form>
+        
+        <br>
+        <h2>AREA DE TEXTO</h2>
+        <form action="">
+            <textarea name="areatexto" id="" cols="90" rows="10" placeholder="escribe aqui tus mierdas :)"></textarea>
+        </form>
+
+        <h2>Opciones</h2>
+        <form action="">
+            <h2>UNA OPCION</h2>
+            <em>Defensa de IE/IE GO/IE ARES-ORION/IE HEROES' VICTORY ROAD</em>
+            <br>
+            <input type="radio" name="df" id="" value="1">Shawn Froste <!--IE ORIGINAL-->
+            <br>
+            <input type="radio" name="df" id="" value="2">Aitor Cazador<!--IE GO-->
+            <br>
+            <input type="radio" name="df" id="" value="3">Hunter Foster <!--IE ARES-ORION-->
+            <br>
+            <input type="radio" name="df" id="" value="4">Cedric Freud <!--IE HVR-->
+            <br>
+            <h2>MULTIPLIE ELECIONES</h2>
+            <em>Defensa de IE/IE GO/IE ARES-ORION/IE HEROES' VICTORY ROAD</em>
+            <br>
+            <input type="checkbox" name="df" id="" value="1">Shawn Froste <!--IE ORIGINAL-->
+            <br>
+            <input type="checkbox" name="df" id="" value="2">Aitor Cazador<!--IE GO-->
+            <br>
+            <input type="checkbox" name="df" id="" value="3">Hunter Foster <!--IE ARES-ORION-->
+            <br>
+            <input type="checkbox" name="df" id="" value="4">Cedric Freud <!--IE HVR-->
+            <br>
+            <br>
+            <select name="Defensa de IE/IE GO/IE ARES-ORION/IE HEROES' VICTORY ROAD" id="" >
+                <!--TITULO DEL GRUPO-->
+                <optgroup label="Defensa de IE/IE GO/IE ARES-ORION/IE HEROES' VICTORY ROAD">
+                <option value="1">Shawn Froste</option>
+                <option value="2">Aitor Cazador</option>
+                <option value="3">Hunter Foster</option>
+                <option value="4">Cedric Freud</option>
+            </select>
+            <br>
+            <br>
+            <h1>SELECION MULTIPLE</h1>
+            <select name="" id="" multiple="multiple">
+                <option value="1">Shawn Froste</option>
+                <option value="2">Aitor Cazador</option>
+                <option value="3">Hunter Foster</option>
+                <option value="4">Cedric Freud</option>
+            </select>
+            <br><br>
+            <!-- CAMPO OCULTO -->
+            <input type="hidden" name="" placeholder="oculto"> 
+            <br><br>
+            <fieldset>
+                <legend>nose</legend>
+                <label for="nombre">Nombre</label><input type="text" name="" id="">
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>

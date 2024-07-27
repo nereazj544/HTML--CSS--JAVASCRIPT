@@ -1,0 +1,42 @@
+*{
+    padding: 0; margin: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+.container{
+    margin: 20px;
+}
+
+/* DATOS BASICOS */
+
+.Datos_Basicos{
+    padding: 9px;
+    margin: 2px;
+}
+.ANIME{
+    padding: 9px;
+    margin: 2px;
+}
+
+legend{
+    padding: 10px;
+    text-align: center;
+    color:rgb(6, 70, 70);
+    font-weight: bold;
+    font-style: italic;
+}
+
+input{
+    text-align: center;
+    
+}
+
+/* BOTONES */
+
+.botones{
+    text-align: center;
+    margin: 30px 30px;
+}
