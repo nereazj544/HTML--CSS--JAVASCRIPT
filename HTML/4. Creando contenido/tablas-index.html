@@ -1,11 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <table border="1" style="text-align: center;">
+        <!-- TITULO/ENCABEZADO -->
+        <caption>Animes</caption>
+
+        <!-- Primera celda -->
+        <tr>
+            <!-- <td><strong>Anime</strong></td>
+            <td><strong>Genero</strong></td> -->
+            <th>ANIME</th>
+            <th>GENERO</th>
+        </tr>
+        <!-- Segunda celda -->
+        <tr>
+            <td>Inazuma Eleven</td> <!-- PRIMERA COLUMNA -->
+            <td>Deporte</td> <!-- SEGUNDA COLUMNA -->
+        </tr>
+
+        <!-- Tercera celda -->
+        <tr>
+            <td>Date A Live</td>
+            <td>Harem</td>
+        </tr>
+
+        <tr>
+            <td>Another</td> <!-- PRIMERA COLUMNA -->
+            <td>Terror</td> <!-- SEGUNDA COLUMNA -->
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- colspan sirve para espander la celda hacia las columnas -->
+    <!-- rowspan sirve para espander la celda hacia las filas -->
+    <table border="1">
+        <caption>Animes por genero</caption>
+        <tr>
+            <th rowspan="10">animeflv</th>
+            <th colspan="3">ANIMES DE DEPORTES</th>
+        </tr>
+
+        <tr style="text-align: center;">
+            <td>Inazuma Eleven</td>
+            <td>Haikyuu</td>
+            <td>Blue Lock</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">ANIMES DE MISTERIO</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Another</td>
+            <td>Death Note</td>
+            <td>Kakegurui</td>
+        </tr>
+        <tr>
+            <th colspan="3">ANIMES DE HAREM</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Date A Live</td>
+            <td>Arifureta Shokugyou de Sekai Saikyou</td>
+            <td>High School DxD</td>
+        </tr>
+        <tr>
+            <th colspan="3">ANIMES DE HAREM (INVERSO)</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Diabolik Lovers</td>
+            <td>Ouran Host Club</td>
+            <td>Kamigami no Asobi</td>
+        </tr>
+        <tr>
+            <th colspan="3">ANIMES DE ECCHI</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Mahou Shoujo ni Akogarete</td>
+            <td>Kissxsis</td>
+            <td>Monster Musume no Iru Nichijou</td>
+        </tr>
+    </table>
+    <br>
+    <h1>ANIMEFLV</h1>
+    <table border="1">
+        <caption>Animes vistos(?</caption>
+        <thead>
+            <tr>
+                <th colspan="4">Pequeña lista de algunos animes</th>
+            </tr>
+            <tr>
+                <th>ESTADO</th>
+                <th>ANIME</th>
+                <th>GENERO</th>
+            </tr>
+        </thead>
+        <!-- CUERPO DE LA TABLA -->
+        <tbody>
+            <tr>
+                <td rowspan="4">COMPLETO</td>
+                <td>Inazuma Eleven</td>
+                <td>Deporte</td>
+            </tr>
+            <tr>
+                <td>Another</td>
+                <td>Terror</td>
+            </tr>
+            <tr>
+                <td>Monster Musume no Iru Nichijou</td>
+                <td>Ecchi/Harem</td>
+            </tr>
+            <tr>
+                <td>Bakuon!!</td>
+                <td>Comedia</td>
+            </tr>
+            <tr>
+                <td colspan="2">NO SE QUE PONER AQUI 🙂</td>
+                <td style="text-align: center;">🐲</td>
+            </tr>
+        </tbody>
+
+        <!-- PIE DE TABLA -->
+        <tfoot>
+            <td colspan="9"><em>no sé que poner aqui :v</em></td>
+        </tfoot>
+    </table>
+
+
+
 </body>
+
 </html>
