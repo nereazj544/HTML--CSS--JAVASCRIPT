@@ -6,4 +6,4 @@ Se puede usar de dos maneras:
 
 - Fuera del documento HTML
     - se crea un link donde se indica la carpta del archivo Javascrito (``.js``)
-    
+    - ``<link rel="javascript" href="javascript/script.js">``
