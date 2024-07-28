@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.container{
+    border: 2px solid black;
+    margin: 30px;
+    padding: 4%;
+    background: #a6312690;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+header{
+    border: 2px solid black;
+    margin: 30px;
+    padding: 2%;
+    text-align: center;
+    background:#7C8A8B;
+}
+
+body{
+    background: url(../../../img/aitorcazador.jpg) no-repeat;
+    background-size: cover;
+}
+
+ol{
+    font-weight: inherit;
+    color: aqua;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
