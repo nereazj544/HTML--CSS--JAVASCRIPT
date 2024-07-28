@@ -1,0 +1,39 @@
+.c1, .c2, .c3{
+    font-size: 25px;
+    border: 2px solid #A63026;
+    margin: 10px; padding: 10px;
+    height: 150px;
+}
+
+.c2 > a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.c2 > a:hover{
+    border: 2px dotted #A63026;
+    font-size: 18px;
+    color: #7C8A8B;
+    text-decoration: double;
+}
+
+.separador{
+    background-color: #A63026;
+    width: 300px;
+    margin: 200px;
+}
+
+
+.ca1, .ca2, .ca3{
+    position: relative;
+    font-size: 25px;
+    border: 2px solid #A63026;
+    margin: 10px; padding: 10px;
+    width: 100px;
+}
+
+.ca2{
+    bottom: 80px;
+    left: 80px;
+}
