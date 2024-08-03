@@ -6,6 +6,7 @@ import { initSpritesheet } from "./spritesheet.js"
 /*Globar Phaser*/
 const config = {
     type: Phaser.AUTO,
+    autoFocus: false,
     width: 256,
     height: 244,
     backgroundColor: '#049cd8',
@@ -230,28 +231,29 @@ function addToScore(scoreToAdd, origin, game) {
 
 
 function update() {
+    const { mario } = this
     //se ejecuta 3 (bucle infinito)
     // console.log('update')
     Controls(this)
 
-    const { mario } = this
 
     //MUERTE DE MARIO
     if (mario.y >= config.height) {
-        MuerteMario(this)
+        MuerteMario(this) 
     }
 }
 
 function MuerteMario(game) {
     const { mario, scene } = game
-    if (mario.isDeath) return
+    
     mario.isDeath = true
     mario.anims.play('mario-muerto')
     mario.setCollideWorldBounds(false)
-    // playAudio('gameover', this, { volumen: 0.2 }).play()
-    playAudio('gameover', game, { volume: 0.3 }).play()
-    mario.body.checkCollision.none = true
+    playAudio('gameover', game, { volume: 0.3 })
     mario.setVelocityX(0)
+    
+    // playAudio('gameover', this, { volumen: 0.2 }).play()
+     mario.body.checkCollision.none = true
 
     setTimeout(() => {
         mario.setVelocityY(-200)
