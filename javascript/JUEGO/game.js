@@ -88,6 +88,10 @@ function create() {
         .create(160, config.height - 16, 'floorbricks')
         .setOrigin(0, 0.5)
         .refreshBody()
+    this.floor
+        .create(200, config.height, 'floorbricks')
+        .setOrigin(0, 0.5)
+        .refreshBody() 
 
 
 
@@ -250,10 +254,11 @@ function MuerteMario(game) {
     mario.anims.play('mario-muerto')
     mario.setCollideWorldBounds(false)
     playAudio('gameover', game, { volume: 0.3 })
+     mario.body.checkCollision.none = true
     mario.setVelocityX(0)
     
+    
     // playAudio('gameover', this, { volumen: 0.2 }).play()
-     mario.body.checkCollision.none = true
 
     setTimeout(() => {
         mario.setVelocityY(-200)
