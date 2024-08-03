@@ -18,9 +18,9 @@ const config = {
         }
     },
     scene: {
-        preload, //funcion que se ejecuta para precargar recuros
-        create, //funcion que se ejecuta cuando el juego comienza
-        update //funcion que se ejecuta en cada frame
+        preload: preload, //funcion que se ejecuta para precargar recuros
+        create: create, //funcion que se ejecuta cuando el juego comienza
+        update: update //funcion que se ejecuta en cada frame
 
     }
 }
